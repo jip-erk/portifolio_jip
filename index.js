@@ -6,7 +6,7 @@ const tl = gsap.timeline({
     scrollTrigger: {
         trigger: ".main",
         scrub: true,
-        pin: false,
+        pin: true,
 
         start: "50% 50%",
         end: "+=120%"
@@ -15,7 +15,7 @@ const tl = gsap.timeline({
 
 
 .to(".main", {
-    scale: 3,
+    scale: 9,
     opacity: 0
 })
 
