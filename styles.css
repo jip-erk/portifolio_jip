@@ -8,6 +8,10 @@ html {
     width: 100%;
 }
 
+:root {
+    --main-blue: 13, 110, 253;
+}
+
 html {
     overflow-x: hidden;
 }
@@ -44,6 +48,24 @@ html {
     margin-top: 30%;
 }
 
+.filter {
+    backdrop-filter: blur(10px);
+}
+
+.overlay {
+    background-image: linear-gradient(to bottom right, #002f4b, #dc4225);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: -150px;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    box-sizing: border-box;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 11%, rgba(255, 255, 255, 0) 76%);
+}
+
 
 /* clouds */
 
@@ -69,17 +91,27 @@ html {
     margin-top: 10%;
     margin-left: 40%;
     opacity: 70%;
+    z-index: -100;
 }
 
 .img-6 {
     margin-top: 10%;
     margin-left: -20%;
     opacity: 70%;
+    z-index: -200;
 }
 
 .img {
     width: 200px;
     margin: 20px;
+    position: fixed;
+}
+
+.scroll-icon {
+    left: 65%;
+    position: absolute;
+    width: auto;
+    height: 100px;
 }
 
 ::-webkit-scrollbar {
@@ -97,10 +129,199 @@ html {
 .section2 {
     height: 100vh;
     width: 100%;
+    /* background-image: url("assets/unity-bg.png"); */
 }
 
 .section3 {
     background-color: #f0db4f;
     height: 100vh;
     width: 100%;
+}
+
+.cover {
+    display: inline-block;
+    height: 220px;
+    width: 320px;
+    margin: 15px;
+    border-radius: 8px;
+}
+
+.container-card {
+    width: 100%;
+    height: 460px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    justify-content: center;
+    transform: translate(-50%, -50%);
+}
+
+.atvImg {
+    border-radius: 8px;
+    transform-style: preserve-3d;
+    -webkit-tap-highlight-color: rgba(#000, 0);
+}
+
+.atvImg img {
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(14, 21, 47, 0.25);
+}
+
+.atvImg-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    transition: all 0.2s ease-out;
+}
+
+.atvImg-container.over .atvImg-shadow {
+    box-shadow: 0 45px 100px rgba(14, 21, 47, 0.4), 0 16px 40px rgba(14, 21, 47, 0.4);
+}
+
+.atvImg-layers {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    transform-style: preserve-3d;
+}
+
+.atvImg-rendered-layer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+    background-size: cover;
+    transition: all 0.1s ease-out;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.atvImg-shadow {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+    transition: all 0.2s ease-out;
+    box-shadow: 0 8px 30px rgba(14, 21, 47, 0.6);
+}
+
+.atvImg-shine {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 8px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, .25) 0%, rgba(255, 255, 255, 0) 60%);
+}
+
+.vidBg {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+}
+
+.ipsType_right {
+    text-align: right;
+}
+
+.ipsType_center {
+    text-align: center;
+}
+
+.cInnerContent {
+    max-width: 1240px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ipsSpacer_bottom_double {
+    margin-bottom: 30px;
+}
+
+.ipsGrid {
+    display: inline-block;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ipsGrid::before,
+.ipsGrid::after {
+    display: table;
+    content: "";
+    line-height: 0;
+}
+
+.ipsGrid>[class*="ipsGrid_span"] {
+    display: block;
+    width: 100%;
+    min-height: 30px;
+    box-sizing: border-box;
+}
+
+.ipsGrid>.ipsGrid_span5 {
+    width: 40.42553191489362%;
+}
+
+.ipsGrid>.ipsGrid_span7 {
+    width: 57.44680851063829%;
+}
+
+.ipsGrid>[class*="ipsGrid_span"] {
+    float: left;
+    margin-left: 2%;
+}
+
+.ipsGrid>[class*="ipsGrid_span"]:first-child {
+    margin-left: 0;
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+}
+
+.card {
+    margin-bottom: 30px;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #ffffff;
+    box-shadow: 1px 1px 5px 1px #CCCCCC;
+    /*   transition: 0.3s; */
+}
+
+.featured-image-container .card {
+    padding: 10px;
+    height: 0;
+    padding-bottom: calc(100% - 10px);
+}
+
+h2.heading_large {
+    font-size: 1.8em;
+}
+
+img {
+    max-width: 100%;
+}
+
+.header-section {
+    margin: 200px auto;
+}
+
+.gs_reveal {
+    opacity: 0;
+    visibility: hidden;
+    will-change: transform, opacity;
 }

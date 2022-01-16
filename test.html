@@ -16,11 +16,11 @@
 
 
 
-    <div id="scene" data-relative-input="true" class="clouds main ">
+    <div id="scene" data-relative-input="true" class="clouds main filter">
 
         <img src="assets/Clouds/cloud1.png" data-depth='2.2' width="200%" class="img-1" />
 
-        <div class="container justify-content-center " data-depth='0.8' width="150%">
+        <div class="container justify-content-center " data-depth='0.9' width="150%">
             <h1 class="txt text-center" style="font-size: 60px; opacity: 1;">Hello, i'm <span class="text-primary" style="font-size: 60px;  opacity: 1;">Jip Erkelens</span></h1>
             <h1 class="txt text-center" style="margin-top: 0; font-size: 25px;" style="font-size: 50px;">A software developer student</h1>
 
@@ -29,8 +29,8 @@
         <div class="container justify-content-center " data-depth='1' width="150%">
 
             <h1 class="txt text-center" style="margin-top: 50%; font-size: 25px;">Scroll to continue</h1>
-            <svg class="txt text-center" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 330 330" style="enable-background:new 0 0 330 330;" xml:space="preserve">
-              <path id="XMLID_225_" d="M325.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001l-139.39,139.393L25.607,79.393
+            <svg class="text-center scroll-icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 330 330" style="enable-background:new 0 0 330 330;" xml:space="preserve">
+              <path fill="#0D6EFD" id="XMLID_225_" d="M325.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001l-139.39,139.393L25.607,79.393
               c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l150.004,150c2.813,2.813,6.628,4.393,10.606,4.393
               s7.794-1.581,10.606-4.394l149.996-150C331.465,94.749,331.465,85.251,325.607,79.393z"/>
             </svg>
@@ -46,15 +46,122 @@
 
 
 
-    <div class="section2">
+    <div class="section2 section">
+
+
+
+        <video autoplay muted loop class="vidBg">
+            <source src="assets/unityVid.mp4" type="video/mp4">
+        </video>
+
+        <div class="overlay"></div>
+
         <img class="test img" src="assets/Unity-logo.png">
+
+
+
+        <div class="container-card">
+            <div class="cover atvImg">
+                <div class="atvImg-layer" data-img="assets/unity-bg.png"></div>
+                <div class="atvImg-layer" data-img="http://robindelaporte.fr/codepen/visa.png"></div>
+            </div>
+
+            <div class="cover atvImg">
+                <div class="atvImg-layer" data-img="assets/unity-bg.png"></div>
+                <div class="atvImg-layer" data-img="http://robindelaporte.fr/codepen/visa.png"></div>
+            </div>
+
+            <div class="cover atvImg">
+                <div class="atvImg-layer" data-img="assets/unity-bg.png"></div>
+                <div class="atvImg-layer" data-img="http://robindelaporte.fr/codepen/visa.png"></div>
+            </div>
+
+            <div class="cover atvImg">
+                <div class="atvImg-layer" data-img="assets/unity-bg.png"></div>
+                <div class="atvImg-layer" data-img="http://robindelaporte.fr/codepen/visa.png"></div>
+            </div>
+
+            <div class="cover atvImg">
+                <div class="atvImg-layer" data-img="assets/unity-bg.png"></div>
+                <div class="atvImg-layer" data-img="http://robindelaporte.fr/codepen/visa.png"></div>
+            </div>
+
+            <div class="cover atvImg">
+                <div class="atvImg-layer" data-img="assets/unity-bg.png"></div>
+                <div class="atvImg-layer" data-img="http://robindelaporte.fr/codepen/visa.png"></div>
+            </div>
+        </div>
     </div>
 
 
-    <div class="section3">
+    <!--  <div class="section3 section">
+        <img class="test img" src="assets/js.png">
+    </div>
+-->
+    <div class="cInnerContent">
+        <h1 class="header-section gs_reveal ipsType_center">Scroll down and up to see different reveal animations</h1>
 
+        <div class="features">
+
+            <div class="feature ipsSpacer_bottom_double ipsGrid ipsGrid_collapsePhone">
+                <div class="featured-image-container ipsGrid_span5 gs_reveal gs_reveal_fromLeft">
+                    <div class="card">
+                        <img width="479" src="https://picsum.photos/479/479?index=1" alt="">
+                    </div>
+                </div>
+
+                <div class="ipsGrid_span7 ipsType_left">
+                    <h2 class="heading_large gs_reveal">Create amazing <strong>SVG</strong> animations</h2>
+                    <p class="gs_reveal"><a href="https://greensock.com/drawsvg/">DrawSVGPlugin</a> allows you to progressively reveal (or hide) SVG strokes to make them look like they're being drawn. <a href="https://greensock.com/morphsvg/">MorphSVGPlugin</a> to Morph any
+                        SVG shape into any other shape smoothly regardless of the number of points in each. <a href="/docs/v3/Plugins/MotionPathPlugin">MotionPathPlugin</a> allows you to easily move any object along a path.</p>
+                </div>
+            </div>
+
+            <div class="feature ipsSpacer_bottom_double ipsGrid ipsGrid_collapsePhone">
+                <div class="ipsGrid_span7 ipsType_right">
+                    <h2 class="heading_large gs_reveal">Supercharge immersive <strong>WebGL</strong> experiences</h2>
+                    <p class="gs_reveal">GreenSock is used in some of the most popular <a href="//threejs.org/">Three.js</a> powered WebGL projects. Animate any object in a scene. <a href="https://greensock.com/PixiPlugin/">PixiPlugin</a> makes animating <a href="//www.pixijs.com/">Pixi.js</a>                        objects with GSAP a breeze. Animate position, scale, color effects and more with all the power and control of GSAP and the rendering speed of Pixi.js.</p>
+                </div>
+
+                <div class="featured-image-container ipsGrid_span5 gs_reveal gs_reveal_fromRight">
+                    <div class="card">
+                        <img width="200" src="https://picsum.photos/479/479?index=2" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="feature ipsSpacer_bottom_double ipsGrid ipsGrid_collapsePhone">
+                <div class="featured-image-container ipsGrid_span5 gs_reveal gs_reveal_fromLeft">
+                    <div class="card">
+                        <img width="479" src="https://picsum.photos/479/479?index=3" alt="">
+                    </div>
+                </div>
+
+                <div class="ipsGrid_span7 ipsType_left">
+                    <h2 class="heading_large gs_reveal">Control performant <strong>Canvas</strong> animations</h2>
+                    <p class="gs_reveal">GSAP makes animating with Canvas even easier by providing an easier way to look and sequence animations. GSAP works great with <a href="//www.adobe.com/products/animate.html">Adobe Animate</a> and <a href="//createjs.com/easeljs">EaseJS</a>                        through GSAP's <a href="https://greensock.com/easelplugin/">EaselJSPlugin</a>.</p>
+                </div>
+            </div>
+
+            <div class="feature ipsSpacer_bottom_double ipsGrid ipsGrid_collapsePhone">
+                <div class="ipsGrid_span7 ipsType_right">
+                    <h2 class="heading_large gs_reveal"><strong>Award winning</strong> websites</h2>
+                    <p class="gs_reveal">GSAP is used on over 8,500,000 sites and over 1,000 sites featured on <a href="https://www.awwwards.com/websites/gsap-animation/" target="_blank">Awwwards</a>. For some of our favorites, check out <a href="https://greensock.com/showcase/">our showcase</a>.</p>
+                </div>
+
+                <div class="featured-image-container ipsGrid_span5 gs_reveal gs_reveal_fromRight">
+                    <div class="card">
+                        <img width="479" src="https://picsum.photos/479/479?index=4" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </div>
 
     </div>
+
+
+
 
 
 
