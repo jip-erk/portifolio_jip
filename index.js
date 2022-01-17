@@ -59,12 +59,12 @@ gsap.utils.toArray(".section").forEach(section => {
 function animateFrom(elem, direction) {
     direction = direction || 1;
     var x = 0,
-        y = direction * 500;
+        y = direction * 300;
     if (elem.classList.contains("gs_reveal_fromLeft")) {
-        x = -100;
+        x = -200;
         y = 0;
     } else if (elem.classList.contains("gs_reveal_fromRight")) {
-        x = 100;
+        x = 200;
         y = 0;
     }
     elem.style.transform = "translate(" + x + "px, " + y + "px)";

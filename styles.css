@@ -70,8 +70,8 @@ html {
 /* clouds */
 
 .img-1 {
-    margin-top: 10%;
-    margin-left: 5%;
+    margin-top: 25%;
+    margin-left: 40%;
 }
 
 .img-2 {
@@ -117,6 +117,7 @@ html {
 ::-webkit-scrollbar {
     display: none;
 }
+
 
 
 /* sections */
@@ -267,16 +268,17 @@ html {
 .ipsGrid>[class*="ipsGrid_span"] {
     display: block;
     width: 100%;
-    min-height: 30px;
+
     box-sizing: border-box;
 }
 
 .ipsGrid>.ipsGrid_span5 {
     width: 40.42553191489362%;
+    height: auto;
 }
 
 .ipsGrid>.ipsGrid_span7 {
-    width: 57.44680851063829%;
+    width: 50.44680851063829%;
 }
 
 .ipsGrid>[class*="ipsGrid_span"] {
@@ -295,17 +297,17 @@ html {
 
 .card {
     margin-bottom: 30px;
-    border-radius: 8px;
+
     overflow: hidden;
     background: #ffffff;
-    box-shadow: 1px 1px 5px 1px #CCCCCC;
+    
     /*   transition: 0.3s; */
 }
 
 .featured-image-container .card {
-    padding: 10px;
-    height: 0;
-    padding-bottom: calc(100% - 10px);
+    
+    height: auto;
+   
 }
 
 h2.heading_large {
