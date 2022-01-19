@@ -87,6 +87,13 @@ html {
     margin-left: -15%;
 }
 
+.cent {
+    top: 50%;
+    left: 50%;
+    justify-content: center;
+    transform: translate(-50%, -50%);
+}
+
 .img-5 {
     margin-top: 10%;
     margin-left: 40%;
@@ -117,7 +124,6 @@ html {
 ::-webkit-scrollbar {
     display: none;
 }
-
 
 
 /* sections */
@@ -268,7 +274,6 @@ html {
 .ipsGrid>[class*="ipsGrid_span"] {
     display: block;
     width: 100%;
-
     box-sizing: border-box;
 }
 
@@ -297,17 +302,13 @@ html {
 
 .card {
     margin-bottom: 30px;
-
     overflow: hidden;
     background: #ffffff;
-    
     /*   transition: 0.3s; */
 }
 
 .featured-image-container .card {
-    
     height: auto;
-   
 }
 
 h2.heading_large {
