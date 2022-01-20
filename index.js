@@ -32,6 +32,7 @@ gsap.utils.toArray(".section").forEach(section => {
             end: () => "+=" + section.offsetWidth,
             scrub: true,
             pin: true,
+            backgroundColor: 'red',
             end: "+=200%"
                 //anticipatePin: 1
         },
